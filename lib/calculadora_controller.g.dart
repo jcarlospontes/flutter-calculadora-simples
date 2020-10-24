@@ -24,18 +24,18 @@ mixin _$CalculadoraController on CalculadoraControllerBase, Store {
     });
   }
 
-  final _$sinal_onAtom = Atom(name: 'CalculadoraControllerBase.sinal_on');
+  final _$sinalOnAtom = Atom(name: 'CalculadoraControllerBase.sinalOn');
 
   @override
-  bool get sinal_on {
-    _$sinal_onAtom.reportRead();
-    return super.sinal_on;
+  bool get sinalOn {
+    _$sinalOnAtom.reportRead();
+    return super.sinalOn;
   }
 
   @override
-  set sinal_on(bool value) {
-    _$sinal_onAtom.reportWrite(value, super.sinal_on, () {
-      super.sinal_on = value;
+  set sinalOn(bool value) {
+    _$sinalOnAtom.reportWrite(value, super.sinalOn, () {
+      super.sinalOn = value;
     });
   }
 
@@ -165,7 +165,7 @@ mixin _$CalculadoraController on CalculadoraControllerBase, Store {
   String toString() {
     return '''
 calculado: ${calculado},
-sinal_on: ${sinal_on},
+sinalOn: ${sinalOn},
 numero1: ${numero1},
 numero2: ${numero2},
 contador: ${contador},

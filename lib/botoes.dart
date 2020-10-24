@@ -1,11 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'calculadora_controller.dart';
-
-class BotaoCalculadora extends StatelessWidget{
-
-BotaoCalculadora({this.conteudo,this.onPressed});
+class BotaoCalculadora extends StatelessWidget {
+  BotaoCalculadora({this.conteudo, this.onPressed});
 
   final VoidCallback onPressed;
   String conteudo;
@@ -14,11 +11,11 @@ BotaoCalculadora({this.conteudo,this.onPressed});
   Widget build(BuildContext context) {
     return Container(
       child: ButtonTheme(
-        minWidth: 75.0,
-        height: 75.0,
+        minWidth: 70.0,
+        height: 70.0,
         child: OutlineButton(
-          child: Text(
-              conteudo, style: TextStyle(color: Colors.white, fontSize: 15)),
+          child: Text(conteudo,
+              style: TextStyle(color: Colors.white, fontSize: 15)),
           borderSide: BorderSide(
             color: Colors.black,
             style: BorderStyle.solid,
@@ -29,5 +26,4 @@ BotaoCalculadora({this.conteudo,this.onPressed});
       ),
     );
   }
-
 }
